@@ -1,0 +1,284 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://dinbror.dk/bpopup/assets/style.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<style type="text/css">
+
+.button_styles
+{
+width:300px;
+height:50px;
+border-radius:10px;
+background-color:white;
+}
+
+body {
+background-color:white;
+}
+
+#popup, .bMulti {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+
+#popup .logo {
+    color: #2B91AF;
+    font: bold 325% 'Petrona',sans;
+}
+
+.button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+.button {
+    background-color: #2B91AF;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+
+<script type="text/javascript">
+$(function(){
+    $('#pop').click(function(){
+       $('#popup').bPopup();
+	    });
+});
+
+
+$(function(){
+    $('.slideDown').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideDownMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideDown'
+	   });
+    });
+});
+
+
+
+$(function(){
+    $('.slideUp').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideUpMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideUp'
+	   });
+    });
+});
+
+
+$(function(){
+    $('.slideLeft').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideLeftMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideIn'
+	   });
+    });
+});
+
+
+$(function(){
+    $('.slideRight').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideRightMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideBack'
+	   });
+    });
+});
+
+
+$(function(){
+    $('.slideUpDown').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideUpDownMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideDown',
+			transitionClose: 'slideUp'
+	   });
+    });
+});
+
+
+$(function(){
+    $('.slideUpDown').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideUpDownMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideIn',
+			transitionClose: 'slideBack'
+	   });
+    });
+});
+
+
+$(function(){
+    $('.slideLeftRight').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideLeftRightMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050,
+            transition: 'slideIn',
+			transitionClose: 'slideBack'
+	   });
+    });
+});
+
+
+
+$(function(){
+    $('.slideLightAppear').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.slideLightAppearMsg').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 1050
+         });
+    });
+});
+
+
+
+$(function(){
+    $('.loadImage').click(function(){
+       // $('#popup').bPopup();
+	   
+	   $('.loadImageDisp').bPopup({
+			content:'image', //'ajax', 'iframe' or 'image'
+            easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 50
+         });
+    });
+});
+
+
+
+
+</script>
+</head>
+<body style="align:center;">
+
+<table style="width:700px;height:500px;text-align:center;padding:10px 10px 10px 10px;">
+<tr>
+<td>
+<div id="popup" style="display: none;">
+    <span class="button b-close"><span>X</span></span>
+    bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="button_styles">bPopup</button>
+</td>
+
+<td>
+<div id="popup" style="display: none;" class="slideDownMsg">
+    <span class="button b-close"><span>X</span></span>
+    slideDown bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideDown button_styles">Slide Down bPopup</button>
+</td>
+
+<td>
+<div id="popup" style="display: none;" class="slideUpMsg">
+    <span class="button b-close"><span>X</span></span>
+    slideUp bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideUp button_styles">Slide Up bPopup</button>
+</td>
+</tr>
+
+
+<tr><td>
+<div id="popup" style="display: none;" class="slideLeftMsg">
+    <span class="button b-close"><span>X</span></span>
+    slideLeft bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideLeft button_styles">Slide Left bPopup</button>
+</td>
+<td>
+<div id="popup" style="display: none;" class="slideRightMsg">
+    <span class="button b-close"><span>X</span></span>
+    slideRight bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideRight button_styles">Slide Right bPopup</button>
+</td>
+
+<td>
+<div id="popup" style="display: none;" class="slideUpDownMsg">
+    <span class="button b-close"><span>X</span></span>
+    Open from Up Close to Down bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideUpDown button_styles">Open from Up Close to Down bPopup</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<div id="popup" style="display: none;" class="slideLeftRightMsg">
+    <span class="button b-close"><span>X</span></span>
+    Open from Left Close to Right bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideLeftRight button_styles">Open from Left Close to Right bPopup</button>
+</td>
+
+<td>
+<div id="popup" style="display: none;" class="slideLightAppearMsg">
+    <span class="button b-close"><span>X</span></span>
+    Light Appearance bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="slideLightAppear button_styles">Light Appearance bPopup</button>
+</td>
+
+<td>
+<div id="popup" style="display: none;" class="loadImageDisp">
+    <span class="button b-close"><span>X</span></span>
+    Light Appearance bPopup Example<br />
+    <span class="logo">Javadomain.in</span>
+</div>
+<button id="pop" class="loadImage button_styles">Fast Appearance bPopup</button>
+</td>
+</tr>
+
+</body>
+</html>
