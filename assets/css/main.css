@@ -473,7 +473,7 @@ a .rss:hover{
 
 .add-item{
 	padding: 20px;
-	height: 200px;
+	max-height: 200px;
     width: auto;
 
 
