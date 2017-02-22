@@ -103,11 +103,14 @@ body
 	height: auto;
     font-weight: 200px; 
 	letter-spacing: 5px;
+    text-shadow: none
 
 
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
 	color: #fff;
+    text-shadow: none
+
 
 }
 .navbar-default .navbar-toggle .icon-bar {
@@ -115,9 +118,12 @@ body
 }
 .navbar-fixed-top .navbar-toggle .icon-bar {
     background-color: #313131;
+    text-shadow: none
 }
 .navbar-fixed-top .navbar-toggle{
 	border-color: #313131;
+    text-shadow: none
+
 }
 .navbar-default {
     background-color: transparent;
@@ -160,8 +166,7 @@ body
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
-    color: #fff;
-    font-weight: bold; 
+    color: #fff;	
 
 }	/*Home*/
 .header-wrapper{
