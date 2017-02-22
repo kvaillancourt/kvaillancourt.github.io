@@ -101,11 +101,14 @@ body
 	font-size: 30px;
 	padding: 10px 20px;
 	height: auto;
-	font-weight: 200;
+    font-weight: 200px; 
 	letter-spacing: 5px;
+
+
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
 	color: #fff;
+
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
@@ -119,7 +122,13 @@ body
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
-    padding-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-weight: 200px;
+	text-shadow: 1px 0 0 #878177, 0 -1px 0 #878177, 0 1px 0 #878177, -1px 0 0 #878177;
+
+    /*background-color: rgba(255, 255, 255, 0.4); */
+
 }
 .navbar-default .navbar-nav>li>a{
 	color: #fff;
@@ -153,6 +162,7 @@ body
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #fff;
     font-weight: bold; 
+
 }	/*Home*/
 .header-wrapper{
 	text-align: center;
@@ -168,10 +178,19 @@ body
 	font-size: 50px;
 	letter-spacing: 10px;
 	font-weight: 200;
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+    /*font-weight: bold; */
+	text-shadow: 1px 0 0 #878177, 0 -1px 0 #878177, 0 1px 0 #878177, -1px 0 0 #878177;
+
+
 }
 .header-subtitle{
 	font-size: 20px;
 	letter-spacing: 3px;
+	/*font-weight: bold;*/
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+	text-shadow: 1px 0 0 #878177, 0 -1px 0 #878177, 0 1px 0 #878177, -1px 0 0 #878177;
+
 }
 /*=================================================
 ||				4. Our Service
