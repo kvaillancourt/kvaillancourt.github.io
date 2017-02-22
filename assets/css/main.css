@@ -182,11 +182,10 @@ body
 .header-title{
 	font-size: 50px;
 	letter-spacing: 10px;
-	font-weight: 200;
+	font-size: 3em; 
 	/*background-color: rgba(255, 255, 255, 0.5);*/
     /*font-weight: bold; */
 	text-shadow: 1px 0 0 #878177, 0 -1px 0 #878177, 0 1px 0 #878177, -1px 0 0 #878177;
-
 
 }
 .header-subtitle{
@@ -196,6 +195,14 @@ body
 	/*background-color: rgba(255, 255, 255, 0.5);*/
 	text-shadow: 1px 0 0 #878177, 0 -1px 0 #878177, 0 1px 0 #878177, -1px 0 0 #878177;
 
+}
+@media(max-width: 480px) {
+  .header-title {
+    font-size: 20pt;
+  }
+  .header-subtitle {
+  	font-size: 15px; 
+  }
 }
 /*=================================================
 ||				4. Our Service
@@ -361,7 +368,9 @@ body
 	border: 2px solid #FFFFFF;
 	text-align: center;
 	padding: 40px 0px;
-	font-size: ;
+	font-size: 20px;
+	margin: 0 auto;
+
 }
 .number{
 	font-weight: 700;
